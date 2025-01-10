@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>洛阳文旅</title>
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/ly.css">
+    </head>
+    <body>
+        <div class="ly">
+             <!--头部开始-->
+             <div class="header">
+                <div class="menu">洛阳文旅全目录</div>
+                <div class="logo"></div>
+                <div class="sale"><a href="login_register.html">注册登录</a></div>
+             </div>
+             <!--头部结束-->
+             <!--轮播图开始-->
+             <div class="banner">
+                <div class="nav">
+                    <div class="nav-wrap">
+                        <ul>
+                            <li class="nav-active"><a href="index.html">官网首页</a></li>
+                            <li>
+                                <a href="https://ganggang-cell.github.io/verbose-octo-parakeet/" target="_blank">景点介绍</a>
+                            </li>
+                            <li><a href="meishi.html">美食推荐</a></li>
+                            <li><a href="https://ganggang-cell.github.io/refactored-octo-goggles/" target="_blank">旅游攻略</a></li>
+                            <li><a href="wenhua.html">历史文化</a></li>
+                            <div class="search">
+                                <form class="search-form" action="/search" method="GET">
+                                    <input type="text" id="search-box" name="query" placeholder="搜索...">
+                                    <button type="submit">搜索</button>
+                                </form>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="banner-box">
+                    <div class="banner-slide">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="banner-slide">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <div class="banner-slide">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="banner-slide">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+                    <div class="banner-slide">
+                        <img src="img/11.jpg" alt="">
+                    </div>
+                    <div class="banner-bottom">
+                        <div class="qrcode-section">
+                            <img src="img/12.jpg" alt="QR Code" class="qrcode">
+                            <p class="qrcode-description">扫描二维码关注我们,一码游洛阳</p>
+                        </div>
+                        <div class="luoyang-intro">
+                            <h3>洛阳简介</h3>
+                            <p>洛阳是中国四大古都之一，位于河南省西部，拥有5000多年文明史和4000多年建城史。作为华夏文明的重要发祥地，</p>
+                            <p> 洛阳曾是105位帝王的都城，拥有丰富的历史遗迹，如龙门石窟等世界文化遗产。这座城市不仅是历史文化的宝库，</p>
+                            <p>也是现代工业和科技的重要基地。</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <!--轮播图结束-->
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.banner-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => {
+            slide.classList.remove('banner-slide-active');
+        });
+        slides[index].classList.add('banner-slide-active');
+        currentSlide = index;
+    }
+
+    showSlide(currentSlide);
+
+    setInterval(function() {
+        let nextSlide = (currentSlide + 1) % slides.length;
+        showSlide(nextSlide);
+    }, 3000); // 每3秒切换一次图片
+});
+
+
+
+document.getElementById('search-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var query = document.getElementById('search-box').value;
+  // 执行搜索操作
+  alert('搜索: ' + query);
+});
+
+
+document.querySelectorAll('.nav-wrap ul li a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const href = this.getAttribute('href');
+        if (href) {
+            window.location.href = href;
+        }
+    });
+});
+        </script>
+    </body>
+</html>

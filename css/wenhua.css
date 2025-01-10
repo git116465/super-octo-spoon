@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f5f0;
+  color: #333;
+  background-image: url("../img/29.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #b38867;
+  text-align: center;
+  padding: 30px 0;
+  background-image: url("../img/21.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 36px;
+  color: white;
+  margin: 0;
+}
+
+header a {
+  display: inline-block;
+  background-color: #cfad80;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header a:hover {
+  background-color: #ad8424;
+}
+
+/* 精彩文化活动推荐部分样式 */
+#tuijian {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto 0;
+}
+
+#tuijian h2 {
+  font-size: 28px;
+  color: #b38867;
+  border-bottom: 2px solid #b38867;
+  padding-bottom: 10px;
+}
+
+/* 活动展示区域布局 */
+#activity-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 30px;
+}
+
+.activity {
+  width: 300px;
+  height: 400px;
+  background-image: url("../img/22.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity:hover {
+  transform: translateY(-10px);
+}
+
+.activity-img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 0;
+  color: #b38867;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 视频展示区域布局 */
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+}
+
+/* 历史文化介绍部分通用样式 */
+#culture-section {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.culture-intro {
+  margin-bottom: 20px;
+}
+
+.culture-intro h2 {
+  border-bottom: 2px solid #b38867;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-image: url("../img/21.jpg");
+  color: white;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}

@@ -1,0 +1,210 @@
+.ly {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1280px;
+}
+ /*头部样式*/
+ .header{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+ }
+
+ .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 179px;
+    height: 68px;
+    background-color: #87ceeb;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+ }
+
+ .logo{
+   width: 70px;
+   height: 70px;
+   margin: 0 auto;
+   background: url("../img/9.jpg") center top;
+ }
+
+ .sale{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    border-left: 1px solid  #f3f3f3;
+    background-color:#87ceeb;
+    height: 64px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;  /*修改光标为小手*/
+ }
+ .sale:hover{
+    color: #bc2e2e;
+    border-bottom: 1px solid #bc2e2e;
+    background: #87ceeb;
+ }
+
+ .banner{
+    width: 100%;
+    height: 884px;
+    background-color: #dadada;
+ }
+
+ .banner-slide {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 884px;
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+   z-index: 1;
+}
+
+.banner-slide-active {
+   left: 0;
+   opacity: 1;
+}
+ .nav{
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url("../img/7.jpg") no-repeat center top;
+ }
+
+ .nav-wrap ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0; 
+ }
+
+ .nav-wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 1180px;
+    height: 70px;
+    line-height: 70px;
+ }
+
+ .nav-wrap li{
+    float: left;
+    width: 227px;
+    font-size: 14px;
+ }
+ .nav-wrap a{
+    color: #fff;
+    text-decoration: none;
+ }
+ .nav-active{
+    background: url("../img/10.jpg") no-repeat ;
+ }
+ .nav-active>a{
+    color: #000;
+ }
+ .nav-wrap li:hover{
+    background:url("../img/10.jpg") no-repeat ;
+ }
+ .nav-wrap li:hover>a{
+    color: #000;
+ }
+
+.search-form {
+   position: absolute;
+   top: 20px; /* 根据实际布局调整 */
+   right:-100px;
+   display: flex;
+}
+
+.search-form input[type="text"] {
+   padding: 5px;
+   width: 150px; /* 根据需要调整宽度 */
+   border: 1px solid #ccc;
+   border-right: none; /* 移除右边的边框 */
+   border-radius: 3px 0 0 3px; /* 圆角 */
+}
+
+.search-form button {
+   padding: 5px 10px;
+   background-color: #87ceeb;
+   color: white;
+   border: none;
+   border-radius: 0 3px 3px 0; /* 圆角 */
+   cursor: pointer;
+}
+
+.search-form button:hover {
+   background-color: #7abed3;
+}
+
+.banner-box{
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 884px;
+    overflow: hidden; 
+}
+.banner-box>img{
+    margin-top: -10px;
+    margin-left: 50%;
+    position: relative;
+    left: -96px;
+}
+.banner-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 170px;
+    background: url("../img/7\(1\).jpg") no-repeat center bottom;
+    z-index: 10;
+}
+
+.qrcode-section {
+   position: absolute;
+   bottom: 0;
+   left: 10%; 
+   transform: translateX(-50%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* 二维码 */
+.qrcode {
+   width: 100px;
+   height: auto;
+   margin-bottom: 10px;
+}
+.qrcode-description {
+   color: #fff; 
+   font-size: 14px; 
+   text-align: center;
+}
+
+.luoyang-intro {
+   overflow: hidden; 
+}
+
+/* 洛阳简介 */
+.luoyang-intro h3 {
+   margin: 0;
+   padding: 10px 0 10px 400px;
+   color: #fff;
+}
+
+/* 文本 */
+.luoyang-intro p {
+   margin: 0;
+   padding: 10px 0 10px 400px;
+   color: #ddd;
+   font-size: 14px;
+   line-height: 1.6;
+}
